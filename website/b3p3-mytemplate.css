@@ -1,0 +1,156 @@
+/* Responsive page template - Block 3 Part 3 Responsive design */
+
+/* PAGE GRID ******************************************************************/
+
+body {
+    display: grid;
+    grid-gap: 1rem;
+
+    /* Arrange in three rows: each as tall as their content */
+    grid-template-rows: max-content max-content max-content;
+
+    /* Arrange in two columns: 
+     - right-hand-side a fixed width, 
+     - left-hand-side with the remaining space */
+    grid-template-columns: 10em 1fr;
+
+    /* As a default, in case the screen is VERY wide, 
+     - limit page width to a sensible maximum 
+     - and centre the page in the screen */
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    /* Place navigation across the top of the page:
+     - in first row, from first to last column */
+    grid-row: 1;
+    grid-column: 1 / -1;
+}
+
+footer {
+    /* Place navigation across the top of the page:
+     - in last row, from first to last column */
+    grid-row: -1;
+    grid-column: 1 / -1;
+}
+
+/* main and aside will be placed in middle row */
+
+/* MAIN GRID ******************************************************************/
+
+main {
+    display: grid;
+    grid-gap: 1rem;
+
+    /* Three evenly spaced columns */
+    grid-template-columns: 1fr 1fr;
+}
+
+main header {
+    /* Place header across the top of the main element:
+     - from first to last column */
+    grid-column: 1 / -1;
+}
+
+/* PAGE FORMATTING ************************************************************/
+
+body {
+    background-color: #ffc;
+}
+
+main {
+    background-color: #eee;
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
+}
+
+/* NAVIGATION *****************************************************************/
+
+nav ul {
+    /* The ul element is semantic, indicating that the menu options are related,
+     but we don't want it to display like a bulleted list */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    /* Allow menu options to flow across the page and wrap */
+    display: inline-block;
+
+    background-color: #080;
+    border: 1px solid #fff;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+}
+
+/* CONTENT ********************************************************************/
+
+/* Remove gap above section headings */
+h2:first-child {
+    margin-top: 0;
+}
+
+/* Make space around figures respond to container size */
+figure {
+    margin: 10%;
+}
+
+/* Allow images to respond to container size */
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add a border around each section in the main element */
+main section {
+    border: 1px solid #aaa;
+    padding: 1rem;
+}
+
+/* MEDIA QUERIES TO REARRANGE ELEMENTS ****************************************/
+
+/* Down to two columns of sections on smaller laptop screens */
+@media screen and (max-width: 70rem) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Hide sidebar column on tablets */
+@media screen and (max-width: 50rem) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Down to one columns of sections on smartphone screens */
+@media screen and (max-width: 30rem) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        /* Remove 8 pixel default margin around outside of page */
+        margin: 0;
+    }
+}
+
+/* Show menu options underneath each other on smaller smartphone screens */
+@media screen and (max-width: 25rem) {
+    nav li {
+        display: block;
+    }
+}
