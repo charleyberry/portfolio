@@ -91,7 +91,7 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <h3 className="font-whitescratches text-dpink text-5xl dark:text-lpink font-medium py-2">Learning</h3>
-              <p className="font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple">Other things I'm teaching myself at the moment:</p>
+              <p className="font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple">Other things I&apos;m teaching myself at the moment:</p>
               <p className="font-handmadetypewriter text-dpink text-xl py-1 leading-8 dark:text-lpink">French</p>
               <p className="font-handmadetypewriter text-purple-950 text-xl py-1 leading-8 dark:text-lpurple">Guitar</p>
               <p className="font-handmadetypewriter text-dpink text-xl py-1 leading-8 dark:text-lpink">Mindfulness</p>
