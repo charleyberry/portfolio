@@ -58,7 +58,7 @@ export default function Home() {
           <div>
             <h3 className="font-whitescratches text-dpink text-6xl pb-1 dark:text-lpink">A little about me</h3>
             <p className="font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple"> 
-              I've loved film, music and technology throughout my life, but struggled
+              I&apos;ve loved film, music and technology throughout my life, but struggled
               when it came to choosing a career path. In 2020, I felt inspired make  
               something of my love of puzzles and problem solving, and signed up to study
               a BSc in Computing & IT and Mathematics at the Open University.
@@ -102,7 +102,7 @@ export default function Home() {
           <div>
             <h3 className="font-whitescratches text-dpink text-6xl pb-1 dark:text-lpink">Portfolio</h3>
             <p className="font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple"> 
-              Below is a collection of projects that I've worked on at university for your 
+              Below is a collection of projects that I&apos;ve worked on at university for your 
               observation (and kind judgement) until my personal side projects are ready
               to take the leap online!
             </p>
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
           </div>
           <p className="font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple pb-20"> 
-              Thanks for taking the time to check out my porfolio, if you'd like to work or 
+              Thanks for taking the time to check out my porfolio, if you&apos;d like to work or 
               collaborate with me please get in touch via LinkedIn or email at the top of this page!
             </p>
         </section>
