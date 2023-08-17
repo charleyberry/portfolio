@@ -23,25 +23,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
        </Head>
 
-       <main className="bg-gradient-to-r from-lorange/40 to-pink2/40 px-10 md:px-10 md:pt-0 lg:px-35 pt-5 dark:bg-gradient-to-r dark:from-purple-950/100 dark:to-dpink">
+       <main className="bg-gradient-to-r from-lorange/40 to-pink2/40 px-3 md:px-10 md:pt-0 lg:px-35 pt-5 dark:bg-gradient-to-r dark:from-purple-950/100 dark:to-dpink">
         <section className="min-h-screen mx-10">
 
           <div className="md:invisible">
-              <ul className="py-4 flex justify-center md:py-0">
+              <ul className="py-4 flex justify-center items-center md:py-0">
                 <li>
-                  <a href="https://www.instagram.com/charleeyberry/"><AiFillInstagram className="text-dpink text-6xl dark:text-lpink mx-6 md:text-xs md:m-0"/></a>
+                  <a href="https://www.instagram.com/charleeyberry/"><AiFillInstagram className="text-dpink text-5xl dark:text-lpink mx-5 md:text-xs md:m-0"/></a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/charlotte-berry-ba3061190/"><AiFillLinkedin className="text-dpink text-6xl dark:text-lpink mx-6 md:text-xs md:m-0"/></a>
+                  <a href="https://www.linkedin.com/in/charlotte-berry-ba3061190/"><AiFillLinkedin className="text-dpink text-5xl dark:text-lpink mx-5 md:text-xs md:m-0"/></a>
                 </li>
                 <li>
-                  <a href="mailto:charleey.louise.berry@gmail.com"><AiFillMail className="text-dpink text-6xl dark:text-lpink mx-6 md:text-xs md:m-0"/></a>
+                  <a href="mailto:charleey.louise.berry@gmail.com"><AiFillMail className="text-dpink text-5xl dark:text-lpink mx-5 md:text-xs md:m-0"/></a>
                 </li>
                 <li>
-                  <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="text-purple-950 cursor-pointer text-5xl dark:text-lpurple mx-6 md:text-xs md:m-0"/>
+                  <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="text-purple-950 cursor-pointer text-4xl dark:text-lpurple mx-5 md:text-xs md:m-0"/>
                 </li>
               </ul>
-            <h1 className="text-3xl pt-8 font-handmadetypewriter text-center text-purple-950 dark:text-lpink md:p-0">Welcome to my Portfolio!</h1>
+            <h1 className="text-2xl pt-3 font-handmadetypewriter text-center text-purple-950 dark:text-lpink md:p-0">Welcome to my Portfolio!</h1>
           </div>
 
           <nav className="invisible md:visible md:p-10 md:flex md:justify-between md:-mt-10">
@@ -64,34 +64,34 @@ export default function Home() {
           
 
           <div className="text-center md:px-10">
-            <h2 className="font-whitescratches pt-2 text-dpink text-7xl md:pb-0 sm:text-5xl sm:pt-3 md:text-9xl dark:text-lpink">Charlotte Berry</h2>
+            <h2 className="font-whitescratches -mt-5 -mx-5 text-dpink text-7xl md:pb-0 sm:text-5xl sm:pt-3 md:text-9xl dark:text-lpink">Charlotte Berry</h2>
             <h3 className="font-handmadetypewriter text-purple-950 text-3xl sm:text-xl sm:pb-2 md:text-3xl dark:text-lpurple">Developer in training</h3>
-            <p className=" font-handmadetypewriter text-purple-950 text-xl sm:text-md py-3 leading-8 md:text-xl max-w-lg mx-auto dark:text-lpurple">  
+            <p className="pt-3 -mx-3 font-handmadetypewriter text-purple-950 text-xl sm:text-md sm:py-3 leading-8 md:text-xl max-w-lg sm:mx-auto dark:text-lpurple">  
               An Open University student on a quest to become an excellent programmer.
             </p>
           </div>
 
-          <div className="relative mx-auto rounded-full w-80 h-80 mt-6 overflow-hidden md:h-86 md:w-86">
+          <div className="relative mx-auto rounded-full sm:w-80 sm:h-80 mt-6 overflow-hidden md:h-86 md:w-86">
             <Image src={portrait} className="bg-dpink dark:bg-lpink"/>
           </div>
         </section>
         
         <section>
           <div>
-            <h3 className="font-whitescratches text-dpink text-6xl pb-1 dark:text-lpink">A little about me</h3>
-            <p className="font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple"> 
+            <h3 className="-mt-7 -mb-2 text-5xl text-center sm:text-left sm:m-0 font-whitescratches text-dpink sm:text-6xl pb-1 dark:text-lpink">A little about me</h3>
+            <p className="mx-5 sm:mx-0 font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple"> 
               I&apos;ve loved film, music and technology throughout my life, but struggled
               when it came to choosing a career path. In 2020, I felt inspired make  
               something of my love of puzzles and problem solving, and signed up to study
               a BSc in Computing & IT and Mathematics at the Open University.
             </p>
-            <p className="font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple">
+            <p className="mx-5 sm:mx-0 font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple">
               Since the beginning of my journey, I have worked for 
               <span className="text-dpink"> <a href="https://simplycakeco.com">Simply Cake Co. </a></span>
               as Social Media Manager and Website Maintenance, taking care of all things online, and have been 
               working on a few projects of my own outside of university.
             </p>
-            <p className="font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple">
+            <p className="mx-5 sm:mx-0 font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple">
               I would like to gain more experience in the real world, particularly in 
               software development, website development and any IT roles within the film & TV sector.
             </p>
@@ -122,8 +122,8 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="font-whitescratches text-dpink text-6xl pb-1 dark:text-lpink">Portfolio</h3>
-            <p className="font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple"> 
+            <h3 className="text-5xl text-center sm:text-left sm:m-0 font-whitescratches text-dpink sm:text-6xl pb-1 dark:text-lpink">Portfolio</h3>
+            <p className="mx-5 sm:mx-0 font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple"> 
               Below is a collection of projects that I&apos;ve worked on at university for your 
               observation (and kind judgement) until my personal side projects are ready
               to take the leap online!
@@ -149,7 +149,7 @@ export default function Home() {
               <Image src={web6}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
             </div>
           </div>
-          <p className="font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple pb-20"> 
+          <p className="mx-5 sm:mx-0 font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple pb-20"> 
               Thanks for taking the time to check out my porfolio, if you&apos;d like to work or 
               collaborate with me please get in touch via LinkedIn or email at the top of my page!
             </p>
@@ -157,6 +157,7 @@ export default function Home() {
        </main>
     </div> 
 
+    
   )
 }
 
