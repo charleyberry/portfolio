@@ -23,32 +23,54 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
        </Head>
 
-       <main className="bg-gradient-to-r from-lorange/40 to-pink2/40 px-10 md:px-20 lg:px-35 pt-5 dark:bg-gradient-to-r dark:from-purple-950/100 dark:to-dpink">
+       <main className="bg-gradient-to-r from-lorange/40 to-pink2/40 px-10 md:px-10 md:pt-0 lg:px-35 pt-5 dark:bg-gradient-to-r dark:from-purple-950/100 dark:to-dpink">
         <section className="min-h-screen mx-10">
-          <nav className="p-10 flex justify-between">
-            <h1 className="text-2xl font-handmadetypewriter text-purple-950 dark:text-lpink pt-2">Welcome to my Portfolio!</h1>
-            <ul className="flex items-center gap-10">
+
+          <div className="md:invisible">
+              <ul className="py-4 flex justify-center md:py-0">
+                <li>
+                  <a href="https://www.instagram.com/charleeyberry/"><AiFillInstagram className="text-dpink text-6xl dark:text-lpink mx-6 md:text-xs md:m-0"/></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/charlotte-berry-ba3061190/"><AiFillLinkedin className="text-dpink text-6xl dark:text-lpink mx-6 md:text-xs md:m-0"/></a>
+                </li>
+                <li>
+                  <a href="mailto:charleey.louise.berry@gmail.com"><AiFillMail className="text-dpink text-6xl dark:text-lpink mx-6 md:text-xs md:m-0"/></a>
+                </li>
+                <li>
+                  <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="text-purple-950 cursor-pointer text-5xl dark:text-lpurple mx-6 md:text-xs md:m-0"/>
+                </li>
+              </ul>
+            <h1 className="text-3xl pt-8 font-handmadetypewriter text-center text-purple-950 dark:text-lpink md:p-0">Welcome to my Portfolio!</h1>
+          </div>
+
+          <nav className="invisible md:visible md:p-10 md:flex md:justify-between md:-mt-10">
+            <h1 className="md:text-2xl md:font-handmadetypewriter text-purple-950 dark:text-lpink md:pt-2">Welcome to my Portfolio!</h1>
+            <ul className="flex items-center md:gap-10">
               <li>
-                <a href="https://www.instagram.com/charleeyberry/"><AiFillInstagram className="text-dpink text-5xl dark:text-lpink"/></a>
+                <a href="https://www.instagram.com/charleeyberry/"><AiFillInstagram className="text-dpink md:text-5xl dark:text-lpink"/></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/charlotte-berry-ba3061190/"><AiFillLinkedin className="text-dpink text-5xl dark:text-lpink"/></a>
+                <a href="https://www.linkedin.com/in/charlotte-berry-ba3061190/"><AiFillLinkedin className="text-dpink md:text-5xl dark:text-lpink"/></a>
               </li>
               <li>
-              <a href="mailto:charleey.louise.berry@gmail.com"><AiFillMail className="text-dpink text-5xl dark:text-lpink"/></a>
+              <a href="mailto:charleey.louise.berry@gmail.com"><AiFillMail className="text-dpink md:text-5xl dark:text-lpink"/></a>
               </li>
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="text-purple-950 cursor-pointer text-4xl dark:text-lpurple"/>
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="text-purple-950 md:cursor-pointer md:text-4xl dark:text-lpurple"/>
               </li>
             </ul>
           </nav>
-          <div className="text-center px-10">
-            <h2 className="font-whitescratches text-dpink text-5xl pt-2 md:text-9xl dark:text-lpink">Charlotte Berry</h2>
-            <h3 className="font-handmadetypewriter text-purple-950 text-xl pb-2 md:text-3xl dark:text-lpurple">Developer in training</h3>
-            <p className=" font-handmadetypewriter text-purple-950 text-md py-3 leading-8 md:text-xl max-w-lg mx-auto dark:text-lpurple">  
+          
+
+          <div className="text-center md:px-10">
+            <h2 className="font-whitescratches pt-2 text-dpink text-7xl md:pb-0 sm:text-5xl sm:pt-3 md:text-9xl dark:text-lpink">Charlotte Berry</h2>
+            <h3 className="font-handmadetypewriter text-purple-950 text-3xl sm:text-xl sm:pb-2 md:text-3xl dark:text-lpurple">Developer in training</h3>
+            <p className=" font-handmadetypewriter text-purple-950 text-xl sm:text-md py-3 leading-8 md:text-xl max-w-lg mx-auto dark:text-lpurple">  
               An Open University student on a quest to become an excellent programmer.
             </p>
           </div>
+
           <div className="relative mx-auto rounded-full w-80 h-80 mt-6 overflow-hidden md:h-86 md:w-86">
             <Image src={portrait} className="bg-dpink dark:bg-lpink"/>
           </div>
@@ -107,35 +129,34 @@ export default function Home() {
               to take the leap online!
             </p>
           </div>
-          <div className="flex flex-column gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
+          <div className="flex flex-column gap-10 py-10 lg:flex-row flex-wrap">
+            <div className="basis-auto lg:basis-1/3 flex-1">
               <Image src={web1}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-auto lg:basis-1/3 flex-1">
               <Image src={web2}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-auto lg:basis-1/3 flex-1">
               <Image src={web3}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-auto lg:basis-1/3 flex-1">
               <Image src={web4}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-auto lg:basis-1/3 flex-1">
               <Image src={web5}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-auto lg:basis-1/3 flex-1">
               <Image src={web6}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
             </div>
           </div>
           <p className="font-handmadetypewriter text-purple-950 text-xl py-2 leading-8 dark:text-lpurple pb-20"> 
               Thanks for taking the time to check out my porfolio, if you&apos;d like to work or 
-              collaborate with me please get in touch via LinkedIn or email at the top of this page!
+              collaborate with me please get in touch via LinkedIn or email at the top of my page!
             </p>
         </section>
        </main>
     </div> 
 
-    
   )
 }
 
