@@ -64,7 +64,7 @@ export default function Home() {
           
 
           <div className="text-center md:px-10">
-            <h2 className="font-whitescratches -mt-5 -mx-5 text-dpink text-7xl md:pb-0 sm:text-5xl sm:pt-3 md:text-9xl dark:text-lpink">Charlotte L Berry</h2>
+            <h2 className="font-whitescratches -mt-5 -mx-5 text-dpink text-7xl md:pb-0 sm:text-5xl sm:pt-3 md:text-9xl dark:text-lpink">Charlotte Berry</h2>
             <h3 className="font-handmadetypewriter text-purple-950 text-3xl sm:text-xl sm:pb-2 md:text-3xl dark:text-lpurple">Developer in training</h3>
             <p className="pt-3 -mx-3 font-handmadetypewriter text-purple-950 text-xl sm:text-md sm:py-3 leading-8 md:text-xl max-w-lg sm:mx-auto dark:text-lpurple">  
               An Open University student on a quest to become an excellent programmer.
@@ -144,6 +144,11 @@ export default function Home() {
             </div>
             <div className="basis-auto lg:basis-1/3 flex-1">
               <Image src={web5}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
+            </div>
+            <div className="basis-auto lg:basis-1/3 flex-1">
+              <a href="/walkingclub.html">
+              <Image src={web5}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
+              </a>
             </div>
             <div className="basis-auto lg:basis-1/3 flex-1">
               <Image src={web6}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
