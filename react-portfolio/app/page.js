@@ -146,11 +146,6 @@ export default function Home() {
               <Image src={web5}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
             </div>
             <div className="basis-auto lg:basis-1/3 flex-1">
-                <Link to="/walkingclub.html" target="_blank" rel="noreferrer">
-                  <Image src={web5}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-                </Link>
-            </div>
-            <div className="basis-auto lg:basis-1/3 flex-1">
               <Image src={web6}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
             </div>
           </div>
