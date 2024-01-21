@@ -146,7 +146,7 @@ export default function Home() {
               <Image src={web5}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
             </div>
             <div className="basis-auto lg:basis-1/3 flex-1">
-              <a href="https://www.instagram.com">
+              <a href="walkingclub.html">
               <Image src={web5}  className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
               </a>
             </div>
